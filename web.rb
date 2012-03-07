@@ -33,6 +33,9 @@ module UnrevUsers
 					input value:'See users with most unreviewed edits', type:'submit'
 				end
 			end
+			p do
+				a 'See me on GitHub', href: 'https://github.com/MatmaRex/unrev_users'
+			end
 		end
 		def list
 			p "Users with most unreviewed edits on #{@input['wiki']}.wiki:"

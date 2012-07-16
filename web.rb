@@ -42,7 +42,7 @@ module UnrevUsers
 			ol do
 				@list.each do |edits, username|
 					li do
-						a username, href: "http://#{@input['wiki']}.wikipedia.org/wiki/Special:Contributions/#{username}"
+						a username, href: "http://#{@input['wiki']}.wikipedia.org/wiki/Special:Contributions/#{username}?limit=500"
 						text " (#{edits} edits)"
 					end
 				end
